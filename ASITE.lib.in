@@ -1,0 +1,10 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+
+loadamberparams FAD.frcmod
+
+FAD = loadMol2 FAD.gaff.mol2
+ASITE = loadPDB ASITE.bonded.pdb
+
+saveoff ASITE ASITE.lib
+quit

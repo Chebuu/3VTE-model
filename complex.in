@@ -1,0 +1,19 @@
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p
+source leaprc.gaff2
+
+set default PBradii mbondi3
+set default nocenter on
+
+loadoff ASITE.lib
+loadamberparams FAD.frcmod
+loadamberparams CBGA.frcmod
+
+CBGA = loadMol2 CBGA.gaff.mol2
+FAD = loadMol2 FAD.gaff.mol2
+ASITE = loadPDB ASITE.4amber.pdb
+
+complex = combine {ASITE CBGA}
+solvateBox complex TIP3PBOX 5
+saveamberparm complex complex.prmtop complex.inpcrd
+quit
