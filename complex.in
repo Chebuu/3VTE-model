@@ -1,19 +1,16 @@
 source leaprc.protein.ff14SB
-source leaprc.water.tip3p
-source leaprc.gaff2
 
-set default PBradii mbondi3
-set default nocenter on
+loadamberparams FADH-.ff
+loadoff FADH-.lib
 
-loadoff ASITE.lib
-loadamberparams FAD.frcmod
-loadamberparams CBGA.frcmod
+FAD = loadPDB structures/3vte_heta.pdb
+3VTE = loadPDB structures/3vte_proa.model.pdb
 
-CBGA = loadMol2 CBGA.gaff.mol2
-FAD = loadMol2 FAD.gaff.mol2
-ASITE = loadPDB ASITE.4amber.pdb
+source FAD-atype.cmd
+source FAD-bond.cmd
 
-complex = combine {ASITE CBGA}
-solvateBox complex TIP3PBOX 5
-saveamberparm complex complex.prmtop complex.inpcrd
+complex = combine {3VTE FAD}
+
+savePDB complex complex.pdb
+saveAmberParm complex complex.prmtop complex.inpcrd
 quit
