@@ -16,15 +16,6 @@
         </a>
     <p>
 </p>
-<p align='center'>
-    <img alt='' src='img/3vte-spin.gif' width=450px'>
-    <p align='center'>
-        RCSB ID: 
-        <a href='https://www.rcsb.org/structure/3vte'>
-            3VTE
-        </a> 
-    </p>
-</p>
 
 <p align='center'>
     <img alt='' src='img/asite.png' width='450px'>
