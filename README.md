@@ -1,8 +1,9 @@
 <p align='center'>
     <img alt='' src='img/benda-mech.png' width='450px'>
     <p align='center'>
+        BRENDA:
         <a href='https://www.brenda-enzymes.org/enzyme.php?ecno=1.21.3.7'>
-            BRENDA: EC 1.21.3.7
+            EC 1.21.3.7
         </a>
     <p>
 </p>
