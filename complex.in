@@ -1,16 +1,21 @@
-set default PBradii mbondi3
-set default nocenter on
+set default nocenter off
+set default PBradii mbondi2
+set default CMAP on
 
 ###########
 # Protein #
 ###########
 source leaprc.protein.ff14SB
 
+3VTE = loadPDB structures/PROA.red50.pdb
+
+############
+# Cofactor #
+############
 loadAmberParams FADH-.ff
 loadOFF FADH-.lib
 
-FAD = loadPDB structures/3vte_heta.pdb
-3VTE = loadPDB structures/3vte_proa.model.pdb
+FAD = loadPDB structures/HETA.red50.pdb
 
 source FAD-atype.cmd
 source FAD-bond.cmd
@@ -33,6 +38,6 @@ complex = combine {3VTE FAD CBGA}
 
 # solvateBox complex TIP3PBOX 5
 
-savePDB complex complex.pdb
+# savePDB complex complex.pdb
 saveAmberParm complex complex.prmtop complex.inpcrd
 quit
