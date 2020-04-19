@@ -2,42 +2,26 @@ set default nocenter off
 set default PBradii mbondi2
 set default CMAP on
 
-###########
-# Protein #
-###########
+source leaprc.gaff2
+source leaprc.water.tip3p
 source leaprc.protein.ff14SB
 
-3VTE = loadPDB structures/PROA.red50.pdb
-
-############
-# Cofactor #
-############
-loadAmberParams FADH-.ff
-loadOFF FADH-.lib
-
-FAD = loadPDB structures/HETA.red50.pdb
-
-source FAD-atype.cmd
-source FAD-bond.cmd
-
-##########
-# Ligand #
-##########
-source leaprc.gaff2
+3VTE = loadPDB structures/3vte_proa.model.pdb
 
 loadAmberParams CBGA.frcmod
-
 CBGA = loadMol2 structures/CBGA.gaff.mol2
 
-###########
-# Complex #
-###########
-# source leaprc.water.tip3p
+loadAmberParams FAD.frcmod
+loadAmberParams FAD-HIE.frcmod
+FAD = loadMol2 structures/FAD.gaff.mol2
 
 complex = combine {3VTE FAD CBGA}
 
-# solvateBox complex TIP3PBOX 5
+remove complex complex.546.HM83
+deleteBond complex.546.HM83 complex.546.C8M
+bond complex.546.C8M complex.458.ND1
 
-# savePDB complex complex.pdb
+solvateBox complex TIP3PBOX 5
+
 saveAmberParm complex complex.prmtop complex.inpcrd
 quit

@@ -1,7 +1,4 @@
-deleteBond 3VTE.176.HG 3VTE.176.SG
-remove 3VTE 3VTE.176.HG
-bond FAD.607.C15 3VTE.176.SG
-
-deleteBond 3VTE.607.H73 3VTE.607.C19
-remove 3VTE 3VTE.607.H73
-bond FAD.607.C19 3VTE.114.ND1
+# His114-FAD bond epsilon N-C8a
+remove complex complex.546.HM83
+deleteBond complex.546.HM83 complex.546.C8M
+bond complex.546.C8M complex.458.ND1 S

@@ -1,4 +1,318 @@
-log started: Fri Apr 17 09:38:48 2020
+log started: Sun Apr 19 14:07:22 2020
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.11, May 2016)
+(UNKNOWN ATOM TYPE: ni)
+(UNKNOWN ATOM TYPE: nj)
+(UNKNOWN ATOM TYPE: nk)
+(UNKNOWN ATOM TYPE: nl)
+(UNKNOWN ATOM TYPE: nm)
+(UNKNOWN ATOM TYPE: nn)
+(UNKNOWN ATOM TYPE: np)
+(UNKNOWN ATOM TYPE: nq)
+(UNKNOWN ATOM TYPE: n5)
+(UNKNOWN ATOM TYPE: n6)
+> 
+> source leaprc.water.tip3p
+----- Source: /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/cmd/leaprc.water.tip3p done
+>> #
+>> #       Load water and ions for TIP3P + Joung-Chetham monovalent ions
+>> #       + Li/Merz highly charged ions (+2 to +4, 12-6 normal usage set)
+>> #
+>> addAtomTypes {
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "F-"   "F" "sp3" }
+>> 	{ "Cl-"  "Cl" "sp3" }
+>> 	{ "Br-"  "Br" "sp3" }
+>> 	{ "I-"   "I"  "sp3" }
+>> 	{ "Li+"  "Li"  "sp3" }
+>> 	{ "Na+"  "Na"  "sp3" }
+>> 	{ "K+"  "K"  "sp3" }
+>> 	{ "Rb+"  "Rb"  "sp3" }
+>> 	{ "Cs+"  "Cs"  "sp3" }
+>> 	{ "Mg+"  "Mg"  "sp3" }
+>>     { "Tl+"  "Tl"  "sp3" }
+>>     { "Cu+"  "Cu"  "sp3" }
+>>     { "Ag+"  "Ag"  "sp3" }
+>>     { "Be2+" "Be"  "sp3" }
+>>     { "Cu2+" "Cu"  "sp3" }
+>>     { "Ni2+" "Ni"  "sp3" }
+>>     { "Pt2+" "Pt"  "sp3" }
+>>     { "Zn2+" "Zn"  "sp3" }
+>>     { "Co2+" "Co"  "sp3" }
+>>     { "Pd2+" "Pd"  "sp3" }
+>>     { "Ag2+" "Ag"  "sp3" }
+>>     { "Cr2+" "Cr"  "sp3" }
+>>     { "Fe2+" "Fe"  "sp3" }
+>>     { "Mg2+" "Mg"  "sp3" }
+>>     { "V2+"  "V"   "sp3" }
+>>     { "Mn2+" "Mn"  "sp3" }
+>>     { "Hg2+" "Hg"  "sp3" }
+>>     { "Cd2+" "Cd"  "sp3" }
+>>     { "Yb2+" "Yb"  "sp3" }
+>>     { "Ca2+" "Ca"  "sp3" }
+>>     { "Sn2+" "Sn"  "sp3" }
+>>     { "Pb2+" "Pb"  "sp3" }
+>>     { "Eu2+" "Eu"  "sp3" }
+>>     { "Sr2+" "Sr"  "sp3" }
+>>     { "Sm2+" "Sm"  "sp3" }
+>>     { "Ba2+" "Ba"  "sp3" }
+>>     { "Ra2+" "Ra"  "sp3" }
+>>     { "Al3+" "Al"  "sp3" }
+>>     { "Fe3+" "Fe"  "sp3" }
+>>     { "Cr3+" "Cr"  "sp3" }
+>>     { "In3+" "In"  "sp3" }
+>>     { "Tl3+" "Tl"  "sp3" }
+>>     { "Y3+"  "Y"   "sp3" }
+>>     { "La3+" "La"  "sp3" }
+>>     { "Ce3+" "Ce"  "sp3" }
+>>     { "Pr3+" "Pr"  "sp3" }
+>>     { "Nd3+" "Nd"  "sp3" }
+>>     { "Sm3+" "Sm"  "sp3" }
+>>     { "Eu3+" "Eu"  "sp3" }
+>>     { "Gd3+" "Gd"  "sp3" }
+>>     { "Tb3+" "Tb"  "sp3" }
+>>     { "Dy3+" "Dy"  "sp3" }
+>>     { "Er3+" "Er"  "sp3" }
+>>     { "Tm3+" "Tm"  "sp3" }
+>>     { "Lu3+" "Lu"  "sp3" }
+>>     { "Hf4+" "Hf"  "sp3" }
+>>     { "Zr4+" "Zr"  "sp3" }
+>>     { "Ce4+" "Ce"  "sp3" }
+>>     { "U4+"  "U"   "sp3" }
+>>     { "Pu4+" "Pu"  "sp3" }
+>>     { "Th4+" "Th"  "sp3" }
+>> }
+>> loadOff atomic_ions.lib
+Loading library: /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/lib/atomic_ions.lib
+Loading: AG
+Loading: AL
+Loading: Ag
+Loading: BA
+Loading: BR
+Loading: Be
+Loading: CA
+Loading: CD
+Loading: CE
+Loading: CL
+Loading: CO
+Loading: CR
+Loading: CS
+Loading: CU
+Loading: CU1
+Loading: Ce
+Loading: Cl-
+Loading: Cr
+Loading: Dy
+Loading: EU
+Loading: EU3
+Loading: Er
+Loading: F
+Loading: FE
+Loading: FE2
+Loading: GD3
+Loading: H3O+
+Loading: HE+
+Loading: HG
+Loading: HZ+
+Loading: Hf
+Loading: IN
+Loading: IOD
+Loading: K
+Loading: K+
+Loading: LA
+Loading: LI
+Loading: LU
+Loading: MG
+Loading: MN
+Loading: NA
+Loading: NH4
+Loading: NI
+Loading: Na+
+Loading: Nd
+Loading: PB
+Loading: PD
+Loading: PR
+Loading: PT
+Loading: Pu
+Loading: RB
+Loading: Ra
+Loading: SM
+Loading: SR
+Loading: Sm
+Loading: Sn
+Loading: TB
+Loading: TL
+Loading: Th
+Loading: Tl
+Loading: Tm
+Loading: U4+
+Loading: V2+
+Loading: Y
+Loading: YB2
+Loading: ZN
+Loading: Zr
+>> loadOff solvents.lib
+Loading library: /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/lib/solvents.lib
+Loading: CHCL3BOX
+Loading: DC4
+Loading: FB3
+Loading: FB3BOX
+Loading: FB4
+Loading: FB4BOX
+Loading: MEOHBOX
+Loading: NMABOX
+Loading: OP3
+Loading: OPC
+Loading: OPC3BOX
+Loading: OPCBOX
+Loading: PL3
+Loading: POL3BOX
+Loading: QSPCFWBOX
+Loading: SPC
+Loading: SPCBOX
+Loading: SPCFWBOX
+Loading: SPF
+Loading: SPG
+Loading: T4E
+Loading: TIP3PBOX
+Loading: TIP3PFBOX
+Loading: TIP4PBOX
+Loading: TIP4PEWBOX
+Loading: TIP5PBOX
+Loading: TP3
+Loading: TP4
+Loading: TP5
+Loading: TPF
+>> HOH = TP3
+>> WAT = TP3
+>> loadAmberParams frcmod.tip3p
+Loading parameters: /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+>> loadAmberParams frcmod.ionsjc_tip3p
+Loading parameters: /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+>> loadAmberParams frcmod.ions234lm_126_tip3p
+Loading parameters: /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+>> 
+> 
+> source leaprc.protein.ff14SB
+----- Source: /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/cmd/leaprc.protein.ff14SB
+----- Source of /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/cmd/leaprc.protein.ff14SB done
+>> logFile leap.log
+log started: Sun Apr 19 14:07:23 2020
 
 Log file: ./leap.log
 >> #
@@ -219,136 +533,6 @@ Loading: NVAL
 >> CHIS = CHIE
 > 
 > 
-> loadAmberParams FADH-.ff
-Loading parameters: ./FADH-.ff
-Reading title:
-PARM94 for DNA, RNA and proteins with TIP3P Water. USE SCEE=1.2 in energy progs
-(UNKNOWN ATOM TYPE: IM)
-(UNKNOWN ATOM TYPE: Li)
-(UNKNOWN ATOM TYPE: IP)
-(UNKNOWN ATOM TYPE: K)
-(UNKNOWN ATOM TYPE: Rb)
-(UNKNOWN ATOM TYPE: IB)
-> loadOFF FADH-.lib
-Loading library: ./FADH-.lib
-Loading: FAD
-> 
-> FAD = loadPDB structures/FAD-ph5.pdb
-Loading PDB file: ./structures/FAD-ph5.pdb
-Matching PDB residue names to LEaP variables.
-Created a new atom named: P1 within residue: .R<FAD 607>
-Created a new atom named: O6 within residue: .R<FAD 607>
-Created a new atom named: N4 within residue: .R<FAD 607>
-Created a new atom named: N5 within residue: .R<FAD 607>
-Created a new atom named: N6 within residue: .R<FAD 607>
-Created a new atom named: O7 within residue: .R<FAD 607>
-Created a new atom named: N7 within residue: .R<FAD 607>
-Created a new atom named: C12 within residue: .R<FAD 607>
-Created a new atom named: O8 within residue: .R<FAD 607>
-Created a new atom named: C13 within residue: .R<FAD 607>
-Created a new atom named: N8 within residue: .R<FAD 607>
-Created a new atom named: C14 within residue: .R<FAD 607>
-Created a new atom named: C15 within residue: .R<FAD 607>
-Created a new atom named: C16 within residue: .R<FAD 607>
-Created a new atom named: C17 within residue: .R<FAD 607>
-Created a new atom named: C18 within residue: .R<FAD 607>
-Created a new atom named: C19 within residue: .R<FAD 607>
-Created a new atom named: C20 within residue: .R<FAD 607>
-Created a new atom named: C21 within residue: .R<FAD 607>
-Created a new atom named: N9 within residue: .R<FAD 607>
-Created a new atom named: C22 within residue: .R<FAD 607>
-Created a new atom named: C23 within residue: .R<FAD 607>
-Created a new atom named: C24 within residue: .R<FAD 607>
-Created a new atom named: O9 within residue: .R<FAD 607>
-Created a new atom named: C25 within residue: .R<FAD 607>
-Created a new atom named: O10 within residue: .R<FAD 607>
-Created a new atom named: C26 within residue: .R<FAD 607>
-Created a new atom named: O11 within residue: .R<FAD 607>
-Created a new atom named: C27 within residue: .R<FAD 607>
-Created a new atom named: O12 within residue: .R<FAD 607>
-Created a new atom named: P2 within residue: .R<FAD 607>
-Created a new atom named: O13 within residue: .R<FAD 607>
-Created a new atom named: O14 within residue: .R<FAD 607>
-Created a new atom named: O15 within residue: .R<FAD 607>
-Created a new atom named: H54 within residue: .R<FAD 607>
-Created a new atom named: H55 within residue: .R<FAD 607>
-Created a new atom named: H56 within residue: .R<FAD 607>
-Created a new atom named: H57 within residue: .R<FAD 607>
-Created a new atom named: H58 within residue: .R<FAD 607>
-Created a new atom named: H59 within residue: .R<FAD 607>
-Created a new atom named: H60 within residue: .R<FAD 607>
-Created a new atom named: H61 within residue: .R<FAD 607>
-Created a new atom named: H62 within residue: .R<FAD 607>
-Created a new atom named: H63 within residue: .R<FAD 607>
-Created a new atom named: H64 within residue: .R<FAD 607>
-Created a new atom named: H65 within residue: .R<FAD 607>
-Created a new atom named: H66 within residue: .R<FAD 607>
-Created a new atom named: H67 within residue: .R<FAD 607>
-Created a new atom named: H68 within residue: .R<FAD 607>
-Created a new atom named: H69 within residue: .R<FAD 607>
-Created a new atom named: H70 within residue: .R<FAD 607>
-Created a new atom named: H71 within residue: .R<FAD 607>
-Created a new atom named: H72 within residue: .R<FAD 607>
-Created a new atom named: H73 within residue: .R<FAD 607>
-Created a new atom named: H74 within residue: .R<FAD 607>
-Created a new atom named: H75 within residue: .R<FAD 607>
-Created a new atom named: H76 within residue: .R<FAD 607>
-Created a new atom named: H77 within residue: .R<FAD 607>
-Created a new atom named: H78 within residue: .R<FAD 607>
-Created a new atom named: H79 within residue: .R<FAD 607>
-Created a new atom named: H80 within residue: .R<FAD 607>
-Created a new atom named: H81 within residue: .R<FAD 607>
-Created a new atom named: H82 within residue: .R<FAD 607>
-Created a new atom named: H83 within residue: .R<FAD 607>
-Created a new atom named: H84 within residue: .R<FAD 607>
-Created a new atom named: H85 within residue: .R<FAD 607>
-  Added missing heavy atom: .R<FAD 607>.A<C9A 38>
-  Added missing heavy atom: .R<FAD 607>.A<C5A 31>
-  Added missing heavy atom: .R<FAD 607>.A<C8M 36>
-  Added missing heavy atom: .R<FAD 607>.A<C7M 34>
-  Added missing heavy atom: .R<FAD 607>.A<C4A 29>
-  Added missing heavy atom: .R<FAD 607>.A<C 24>
-  Added missing heavy atom: .R<FAD 607>.A<N 23>
-  Added missing heavy atom: .R<FAD 607>.A<O 25>
-  Added missing heavy atom: .R<FAD 607>.A<P 50>
-  Added missing heavy atom: .R<FAD 607>.A<O1P 51>
-  Added missing heavy atom: .R<FAD 607>.A<O2P 52>
-  Added missing heavy atom: .R<FAD 607>.A<O3P 53>
-  Added missing heavy atom: .R<FAD 607>.A<PA 1>
-  Added missing heavy atom: .R<FAD 607>.A<O1A1 2>
-  Added missing heavy atom: .R<FAD 607>.A<O2A1 3>
-  Added missing heavy atom: .R<FAD 607>.A<O5'1 4>
-  Added missing heavy atom: .R<FAD 607>.A<C5'2 5>
-  Added missing heavy atom: .R<FAD 607>.A<C4'1 6>
-  Added missing heavy atom: .R<FAD 607>.A<O4'2 7>
-  Added missing heavy atom: .R<FAD 607>.A<C3'1 8>
-  Added missing heavy atom: .R<FAD 607>.A<C1' 12>
-  Added missing heavy atom: .R<FAD 607>.A<O3'2 9>
-  Added missing heavy atom: .R<FAD 607>.A<C2'1 10>
-  Added missing heavy atom: .R<FAD 607>.A<N9A1 13>
-  Added missing heavy atom: .R<FAD 607>.A<O2'2 11>
-  Added missing heavy atom: .R<FAD 607>.A<C8A 14>
-  Added missing heavy atom: .R<FAD 607>.A<C4A1 22>
-  Added missing heavy atom: .R<FAD 607>.A<N7A 15>
-  Added missing heavy atom: .R<FAD 607>.A<N3A 21>
-  Added missing heavy atom: .R<FAD 607>.A<C5A1 16>
-  Added missing heavy atom: .R<FAD 607>.A<C2A2 20>
-  Added missing heavy atom: .R<FAD 607>.A<C6A1 17>
-  Added missing heavy atom: .R<FAD 607>.A<N1A2 19>
-  Added missing heavy atom: .R<FAD 607>.A<N6A2 18>
-  total atoms in file: 85
-  Leap added 66 missing atoms according to residue templates:
-       34 Heavy
-       32 H / lone pairs
-  The file contained 66 atoms not in residue templates
-
-/Users/sethmartinez/opt/anaconda3/envs/qcmm/bin/teLeap: Warning!
-Since the number of added atoms equals the number of missing atoms, it is likely
-that some atoms had incorrect names; you may want to use addPdbAtomMap to map
-these names, or change the names in the PDB file.
-
-> 
-> 
 > 3VTE = loadPDB structures/3vte_proa.model.pdb
 Loading PDB file: ./structures/3vte_proa.model.pdb
 Matching PDB residue names to LEaP variables.
@@ -358,231 +542,32 @@ Mapped residue HIS, term: Terminal/last, seq. number: 517 to: CHIS.
   Leap added 3196 missing atoms according to residue templates:
        3196 H / lone pairs
 > 
-> source FAD-atype.cmd
------ Source: ./FAD-atype.cmd
------ Source of ./FAD-atype.cmd done
->> set FAD.607.O15  type OS    # Index 119
->> set FAD.607.O14  type O2    # Index 118
->> set FAD.607.O13  type O2    # Index 117
->> set FAD.607.P2   type P     # Index 116
->> set FAD.607.O12  type O2    # Index 115
->> set FAD.607.C27  type CT    # Index 114
->> set FAD.607.O11  type OH    # Index 113
->> set FAD.607.C26  type CT    # Index 112
->> set FAD.607.O10  type OH    # Index 111
->> set FAD.607.C25  type CT    # Index 110
->> set FAD.607.O9   type OH    # Index 109
->> set FAD.607.C24  type CT    # Index 108
->> set FAD.607.C23  type CT    # Index 107
->> set FAD.607.C22  type C     # Index 106
->> set FAD.607.N9   type NC    # Index 105
->> set FAD.607.C21  type CM    # Index 104
->> set FAD.607.C20  type CA    # Index 103
->> set FAD.607.C19  type CT    # Index 102
->> set FAD.607.C18  type CA    # Index 101
->> set FAD.607.C17  type CT    # Index 100
->> set FAD.607.C16  type CA    # Index  99
->> set FAD.607.C15  type CA    # Index  98
->> set FAD.607.C14  type CM    # Index  97
->> set FAD.607.N8   type NC    # Index  96
->> set FAD.607.C13  type CQ    # Index  95
->> set FAD.607.O8   type O     # Index  94
->> set FAD.607.C12  type C     # Index  93
->> set FAD.607.N7   type NC    # Index  92
->> set FAD.607.O7   type O     # Index  91
->> set FAD.607.N6   type NC    # Index  90
->> set FAD.607.N5   type NC    # Index  89
->> set FAD.607.N4   type NC    # Index  88
->> set FAD.607.O6   type OH    # Index  87
->> set FAD.607.P1   type P     # Index  86
->> 
->> set FAD.607.H85  type H     # Index 151> does not have a type.
->> set FAD.607.H84  type H     # Index 150> does not have a type.
->> set FAD.607.H83  type H     # Index 149> does not have a type.
->> set FAD.607.H82  type H     # Index 148> does not have a type.
->> set FAD.607.H81  type H     # Index 147> does not have a type.
->> set FAD.607.H80  type H     # Index 146> does not have a type.
->> set FAD.607.H79  type H     # Index 145> does not have a type.
->> set FAD.607.H78  type H     # Index 144> does not have a type.
->> set FAD.607.H77  type H     # Index 143> does not have a type.
->> set FAD.607.H76  type H     # Index 142> does not have a type.
->> set FAD.607.H75  type H     # Index 141> does not have a type.
->> set FAD.607.H74  type H     # Index 140> does not have a type.
->> set FAD.607.H73  type H     # Index 139> does not have a type.
->> set FAD.607.H72  type H     # Index 138> does not have a type.
->> set FAD.607.H71  type H     # Index 137> does not have a type.
->> set FAD.607.H70  type H     # Index 136> does not have a type.
->> set FAD.607.H69  type H     # Index 135> does not have a type.
->> set FAD.607.H68  type H     # Index 134> does not have a type.
->> set FAD.607.H67  type H     # Index 133> does not have a type.
->> set FAD.607.H66  type H     # Index 132> does not have a type.
->> set FAD.607.H65  type H     # Index 131> does not have a type.
->> set FAD.607.H64  type H     # Index 130> does not have a type.
->> set FAD.607.H63  type H     # Index 129> does not have a type.
->> set FAD.607.H62  type H     # Index 128> does not have a type.
->> set FAD.607.H61  type H     # Index 127> does not have a type.
->> set FAD.607.H60  type H     # Index 126> does not have a type.
->> set FAD.607.H59  type H     # Index 125> does not have a type.
->> set FAD.607.H58  type H     # Index 124> does not have a type.
->> set FAD.607.H57  type H     # Index 123> does not have a type.
->> set FAD.607.H56  type H     # Index 122> does not have a type.
->> set FAD.607.H55  type H     # Index 121> does not have a type.
-> set FAD.607.H54  type H     # Index 120> does not have a type.
-> source FAD-bond.cmd
------ Source: ./FAD-bond.cmd
------ Source of ./FAD-bond.cmd done
->> # deleteBond 3VTE.176.HG 3VTE.176.SG
->> # remove 3VTE 3VTE.176.HG
->> # bond FAD.607.C15 3VTE.176.SG
->> 
->> # deleteBond 3VTE.607.H74 3VTE.607.C19
->> # remove 3VTE 3VTE.607.H74
->> # bond FAD.607.C19 3VTE.114.ND1
-> 
-> 
-> ##########
-> # Ligand #
-> ##########
-> source leaprc.gaff2
------ Source: /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/cmd/leaprc.gaff2
------ Source of /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/cmd/leaprc.gaff2 done
->> logFile leap.log
-log started: Fri Apr 17 09:38:49 2020
-
-Log file: ./leap.log
->> #
->> # ----- leaprc for loading the general Amber Force field.
->> #       This file is mostly for use with Antechamber
->> #
->> #	load atom type hybridizations
->> #
->> addAtomTypes {
->> 	{ "h1"  "H" "sp3" }
->> 	{ "h2"  "H" "sp3" }
->> 	{ "h3"  "H" "sp3" }
->> 	{ "h4"  "H" "sp3" }
->> 	{ "h5"  "H" "sp3" }
->> 	{ "ha"  "H" "sp3" }
->> 	{ "hc"  "H" "sp3" }
->> 	{ "hn"  "H" "sp3" }
->> 	{ "ho"  "H" "sp3" }
->> 	{ "hp"  "H" "sp3" }
->> 	{ "hs"  "H" "sp3" }
->> 	{ "hw"  "H" "sp3" }
->> 	{ "hx"  "H" "sp3" }
->> 	{ "o"  "O" "sp2" }
->> 	{ "o2"  "O" "sp2" }
->> 	{ "oh"  "O" "sp3" }
->> 	{ "op"  "O" "sp3" }
->> 	{ "oq"  "O" "sp3" }
->> 	{ "os"  "O" "sp3" }
->> 	{ "ow"  "O" "sp3" }
->> 	{ "c"  "C" "sp2" }
->> 	{ "c1"  "C" "sp2" }
->> 	{ "c2"  "C" "sp2" }
->> 	{ "c3"  "C" "sp3" }
->> 	{ "ca"  "C" "sp2" }
->> 	{ "cc"  "C" "sp2" }
->> 	{ "cd"  "C" "sp2" }
->> 	{ "ce"  "C" "sp2" }
->> 	{ "cf"  "C" "sp2" }
->> 	{ "cg"  "C" "sp2" }
->> 	{ "ch"  "C" "sp2" }
->> 	{ "cp"  "C" "sp2" }
->> 	{ "cs"  "C" "sp2" }
->> 	{ "cq"  "C" "sp2" }
->> 	{ "cu"  "C" "sp2" }
->> 	{ "cv"  "C" "sp2" }
->> 	{ "cx"  "C" "sp2" }
->> 	{ "cy"  "C" "sp2" }
->> 	{ "cz"  "C" "sp2" }
->> 	{ "n"   "N" "sp2" }
->> 	{ "n1"  "N" "sp2" }
->> 	{ "n2"  "N" "sp2" }
->> 	{ "n3"  "N" "sp3" }
->> 	{ "n4"  "N" "sp3" }
->> 	{ "n7"  "N" "sp3" }
->> 	{ "n8"  "N" "sp3" }
->> 	{ "n9"  "N" "sp3" }
->> 	{ "na"  "N" "sp2" }
->> 	{ "nb"  "N" "sp2" }
->> 	{ "nc"  "N" "sp2" }
->> 	{ "nd"  "N" "sp2" }
->> 	{ "ne"  "N" "sp2" }
->> 	{ "nf"  "N" "sp2" }
->> 	{ "nh"  "N" "sp2" }
->> 	{ "no"  "N" "sp2" }
->> 	{ "ns"  "N" "sp2" }
->> 	{ "nt"  "N" "sp2" }
->> 	{ "nu"  "N" "sp2" }
->> 	{ "nv"  "N" "sp2" }
->> 	{ "nx"  "N" "sp3" }
->> 	{ "ny"  "N" "sp3" }
->> 	{ "nz"  "N" "sp3" }
->> 	{ "n+"  "N" "sp3" }
->> 	{ "s"   "S" "sp2" }
->> 	{ "s2"   "S" "sp2" }
->> 	{ "s3"   "S" "sp3" }
->> 	{ "s4"   "S" "sp3" }
->> 	{ "s6"   "S" "sp3" }
->> 	{ "sh"   "S" "sp3" }
->> 	{ "sp"   "S" "sp3" }
->> 	{ "sq"   "S" "sp3" }
->> 	{ "ss"   "S" "sp3" }
->> 	{ "sx"   "S" "sp3" }
->> 	{ "sy"   "S" "sp3" }
->> 	{ "p2"   "P" "sp2" }
->> 	{ "p3"   "P" "sp3" }
->> 	{ "p4"   "P" "sp3" }
->> 	{ "p5"   "P" "sp3" }
->> 	{ "pb"   "P" "sp3" }
->> 	{ "pc"   "P" "sp3" }
->> 	{ "pd"   "P" "sp3" }
->> 	{ "pe"   "P" "sp3" }
->> 	{ "pf"   "P" "sp3" }
->> 	{ "px"   "P" "sp3" }
->> 	{ "py"   "P" "sp3" }
->> 	{ "f"   "F" "sp3" }
->> 	{ "cl"  "Cl" "sp3" }
->> 	{ "br"  "Br" "sp3" }
->> 	{ "i"   "I"  "sp3" }
->> }
->> #
->> #	Load the general force field parameter set.
->> #
->> gaff = loadamberparams gaff2.dat
-Loading parameters: /Users/sethmartinez/opt/anaconda3/envs/qcmm/dat/leap/parm/gaff2.dat
-Reading title:
-AMBER General Force Field for organic molecules (Version 2.11, May 2016)
-(UNKNOWN ATOM TYPE: ni)
-(UNKNOWN ATOM TYPE: nj)
-(UNKNOWN ATOM TYPE: nk)
-(UNKNOWN ATOM TYPE: nl)
-(UNKNOWN ATOM TYPE: nm)
-(UNKNOWN ATOM TYPE: nn)
-(UNKNOWN ATOM TYPE: n5)
-(UNKNOWN ATOM TYPE: n6)
-> 
-> 
 > loadAmberParams CBGA.frcmod
 Loading parameters: ./CBGA.frcmod
 Reading force field modification type file (frcmod)
 Reading title:
 Remark line goes here
-> 
 > CBGA = loadMol2 structures/CBGA.gaff.mol2
 Loading Mol2 file: ./structures/CBGA.gaff.mol2
 Reading MOLECULE named CBG1
-> 
-> ###########
-> # Complex #
-> ###########
-> # source leaprc.water.tip3p
+> loadAmberParams FAD.frcmod
+Loading parameters: ./FAD.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+> # loadAmberParams FAD-HIE.frcmod
+> FAD = loadMol2 structures/FAD.gaff.mol2
+Loading Mol2 file: ./structures/FAD.gaff.mol2
+Reading MOLECULE named FAD
 > 
 > complex = combine {3VTE FAD CBGA}
   Sequence: default_name
-  Sequence: default_name
+  Sequence: FAD
   Sequence: CBG1
+> 
+> # remove complex complex.546.HM83
+> # deleteBond complex.546.HM83 complex.546.C8M
+> # bond complex.546.C8M complex.458.ND1
 > 
 > # solvateBox complex TIP3PBOX 5
 > 
@@ -597,8 +582,78 @@ Writing pdb file: complex.pdb
 
 /Users/sethmartinez/opt/anaconda3/envs/qcmm/bin/teLeap: Warning!
  Truncating residue name for PDB format: CBG1 -> CBG
-> # saveAmberParm complex complex.prmtop complex.inpcrd
+> saveAmberParm complex complex.prmtop complex.inpcrd
+Checking Unit.
+
+/Users/sethmartinez/opt/anaconda3/envs/qcmm/bin/teLeap: Warning!
+The unperturbed charge of the unit (11.006002) is not zero.
+
+/Users/sethmartinez/opt/anaconda3/envs/qcmm/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ ** Warning: No sp2 improper torsion term for  NA-CA-CN-CB
+        atoms are: NE1 CZ2 CE2 CD2
+ ** Warning: No sp2 improper torsion term for  C*-CN-CB-CA
+        atoms are: CG CE2 CD2 CE3
+ total 1729 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CBG1	1
+	CHIE	1
+	FAD	1
+	NALA	1
+  )
+ (no restraints)
  quit
 	Quit
 
-Exiting LEaP: Errors = 0; Warnings = 4; Notes = 0.
+Exiting LEaP: Errors = 0; Warnings = 4; Notes = 1.
