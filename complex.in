@@ -1,4 +1,4 @@
-set default nocenter off
+set default nocenter on
 set default PBradii mbondi2
 set default CMAP on
 
@@ -12,15 +12,14 @@ loadAmberParams CBGA.frcmod
 CBGA = loadMol2 structures/CBGA.gaff.mol2
 
 loadAmberParams FAD.frcmod
-loadAmberParams FAD-HIE.frcmod
 FAD = loadMol2 structures/FAD.gaff.mol2
 
 complex = combine {3VTE FAD CBGA}
 
-remove complex complex.546.HM83
-deleteBond complex.546.HM83 complex.546.C8M
-bond complex.546.C8M complex.458.ND1
+loadAmberParams FAD-HIE.frcmod
+source FAD-bond.cmd
 
+alignAxes complex
 solvateBox complex TIP3PBOX 5
 
 saveAmberParm complex complex.prmtop complex.inpcrd
