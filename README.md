@@ -6,41 +6,34 @@
 - Ions
 - Water
 
-### Replace hasty param hacks
-- Most FAD-His torsions are contrived/wrong
-
-### Verify hetero connections
-- Bond angles for FAD C8Me hydrygens are bad
+### Add impropers for FAD-His-Cys
 
 ### Verify protons
-- CBGA is curently potonated but need anion
 - All His residues are HIE including His114 
 - Protonation states need to reflect H-bonds
     - [View ligand interaction](https://www.rcsb.org/3d-view/3VTE?preset=ligandInteraction&sele=FAD)
 
 ### Verify parameters
-- Correct parameters for atom types
-- Correct assignment of atom types
+- Valid parameters for atom types
+- Valid assignment of atom types
     - H+/RES mismatches will throw
-
-### Refine ligand coordinates
-#### 
-- Use a SwissDock pose for initial substrate coords
-    - NOTE: SwissDock drops FAD so many poses clash
-    - Any valid pose in the active site will be fine
     
-### Refine protein coordinaes
+### Replace the CHARMM-GUI 3VTE model
 - Use the [3VTE PDB-REDO](https://pdb-redo.eu/db/3vte) model
+- Either delete the S-S fragments or add the crosslinks
+    - Filling with modeled loops is a bad idea
 
 
 
-# 
+
+
+
 ## Propsed FAD-dependent Oxidative Cyclization 
 Tyr484 abstracts a proton from CBGA forming an alkoxide nucleophile.        
 FAD accepts a hydride to form a tertiary carbocation that arranges the ring closure.        
-- Mutations at the catalytic base Tyr484 are detrimental.
-- Mutations at either covalent FAD binding site His114 or Cys176 are detrimental.
-- Mutations at Tyr417 and His292 attenuate catalysis but are not detrimental.
+- Mutations at the catalytic base Tyr484 are detrimental
+- Mutations at His114 and Cys176 are detrimental
+- Mutations at Tyr417 and His292 attenuate catalysis but are not detrimental
 
 <p align='center'>
     <img alt='' src='img/benda-mech.png' width='450px'>

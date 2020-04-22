@@ -1,5 +1,5 @@
-set default nocenter on
-set default PBradii mbondi2
+set default nocenter off
+set default PBradii mbondi3
 set default CMAP on
 
 source leaprc.gaff2
@@ -8,18 +8,21 @@ source leaprc.protein.ff14SB
 
 3VTE = loadPDB structures/3vte_proa.model.pdb
 
-loadAmberParams CBGA.frcmod
-CBGA = loadMol2 structures/CBGA.gaff.mol2
+loadAmberParams CBGA.COO.frcmod
+CBGA = loadMol2 structures/CBGA.COO.gaff.mol2
 
 loadAmberParams FAD.frcmod
 FAD = loadMol2 structures/FAD.gaff.mol2
 
 complex = combine {3VTE FAD CBGA}
 
-loadAmberParams FAD-HIE.frcmod
-source FAD-bond.cmd
+loadAmberParams FAD.HIE.frcmod
+source FAD.HIE.cmd
+loadAmberParams FAD.CYS.frcmod
+source FAD.CYS.cmd
 
 alignAxes complex
+
 solvateBox complex TIP3PBOX 5
 
 saveAmberParm complex complex.prmtop complex.inpcrd
