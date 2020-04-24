@@ -1,22 +1,27 @@
-## TODO:
+# TODO:
+
 ### Add model components
 - O2
 - NAG
 - HOOH
 - Ions
-- Water
+
+
+### Pick more approx. CBGA pose
+- Current pose has few clashes but is far from asite
 
 ### Add impropers for FAD-His-Cys
+- Use the LigParGen parameters
 
-### Verify protons
-- All His residues are HIE including His114 
-- Protonation states need to reflect H-bonds
+### Fix nonstandard residues
+- Curently all His residues are HIE including His114
+- I think Cys176 needs to be CYX if it's ligand bound
+
+### Fix protons
+- Protonate His292
+- Deprotonate Tyr484 
+- Protonation states should reflect H-bonds
     - [View ligand interaction](https://www.rcsb.org/3d-view/3VTE?preset=ligandInteraction&sele=FAD)
-
-### Verify parameters
-- Valid parameters for atom types
-- Valid assignment of atom types
-    - H+/RES mismatches will throw
     
 ### Replace the CHARMM-GUI 3VTE model
 - Use the [3VTE PDB-REDO](https://pdb-redo.eu/db/3vte) model
@@ -28,12 +33,12 @@
 
 
 
-## Propsed FAD-dependent Oxidative Cyclization 
-Tyr484 abstracts a proton from CBGA forming an alkoxide nucleophile.        
-FAD accepts a hydride to form a tertiary carbocation that arranges the ring closure.        
-- Mutations at the catalytic base Tyr484 are detrimental
-- Mutations at His114 and Cys176 are detrimental
-- Mutations at Tyr417 and His292 attenuate catalysis but are not detrimental
+# Propsed FAD-dependent Oxidative Cyclization 
+Tyr484 abstracts a proton from CBGA to form an alkoxide nucleophile.        
+FAD accepts a hydride to form a tertiary carbocation that arranges the ring closure.  
+- Mutations at Tyr484 abolish catalysis (catalytic base)
+- Mutations at His114 and Cys176 abolish catalysis (covalent FAD bound residues)
+- Mutations at Tyr417 and His292 greatly reduce K<sub>cat</sub> (non-covalent FAD bound residues)
 
 <p align='center'>
     <img alt='' src='img/benda-mech.png' width='450px'>

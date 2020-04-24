@@ -1,5 +1,5 @@
 set default nocenter off
-set default PBradii mbondi3
+set default PBradii mbondi
 set default CMAP on
 
 source leaprc.gaff2
@@ -23,7 +23,8 @@ source FAD.CYS.cmd
 
 alignAxes complex
 
-solvateBox complex TIP3PBOX 5
+solvateBox complex TIP3PBOX 4
+addIons2 complex Cl- 0
 
 saveAmberParm complex complex.prmtop complex.inpcrd
 quit

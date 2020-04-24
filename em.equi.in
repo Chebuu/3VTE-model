@@ -1,11 +1,10 @@
 [3] equilibration
- &cntrl
-imin = 1, maxcyc = 10, ntmin = 2,
-  ntx = 1, ntc = 1, ntf = 1,
-  ntb = 1, ntp = 0, ntr = 1,
-  ntwx = 1000, ntwe = 0, ntpr = 1000,
-  scee = 1.2, cut = 8.0,
+&cntrl
+  imin = 1, maxcyc = 1000, ntmin = 2,
+  ntx = 1, ntc = 1, ntf = 1, ncyc=500
+  ntb = 0, ntp = 0, ntr = 1,
+  ntwx = 100, ntwe = 0, ntpr = 50,
+  igb=1, cut = 10,
   restraintmask = ':520,519,149,87',
-  restraint_wt=5.0, 
+  restraint_wt = 5.0, 
  /
- 
