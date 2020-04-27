@@ -1,0 +1,12 @@
+[3] equilibration
+&cntrl
+  imin = 0, ntpr=50, ntwx=50, nstlim=1000,
+  irest=0, ntx = 1, ntc = 1, ntf = 1,
+  ntb = 0, ntp = 0, 
+  ntwe = 0,
+  igb=0, cut = 12, temp0 = 300, tempi = 300
+  ibelly = 1, 
+  bellymask = ':WAT | :* & (:520 < :5.0) & !:519'
+  ! bellymask = ':WAT | :519 | :* & (:520 < :5.0)'
+  ! bellymask = ':WAT | :520,519,457,390,148-150,151,163-165,167,168,261,263,265,289,327-330,348-351,386,388,390-392,415,417,457,519,'
+/

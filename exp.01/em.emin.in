@@ -1,0 +1,12 @@
+[1] Solute minimization
+&cntrl
+  imin = 1, 
+  maxcyc = 500, 
+  ncyc = 250,
+  cut = 12, 
+  rgbmax = 12, 
+  igb = 1, 
+  ntb = 0,
+  ntwx = 50,
+  ntpr = 50,
+/

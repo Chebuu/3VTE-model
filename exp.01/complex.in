@@ -1,0 +1,35 @@
+set default nocenter off
+set default PBradii mbondi
+set default CMAP on
+
+source leaprc.gaff2
+source leaprc.water.tip3p
+source leaprc.protein.ff14SB
+
+3VTE = loadPDB ../structures/3vte_proa.model.pdb
+
+loadAmberParams CBGA.COO.frcmod
+CBGA = loadMol2 ../structures/CBGA.COO.gaff.mol2
+
+loadAmberParams FAD.frcmod
+FAD = loadMol2 ../structures/FAD.gaff.mol2
+
+complex = combine {3VTE FAD CBGA}
+
+loadAmberParams FAD.HID.frcmod
+source FAD.HID.cmd
+loadAmberParams FAD.CYS.frcmod
+source FAD.CYS.cmd
+
+alignAxes complex
+
+solvateOct complex TIP3PBOX 4
+addIons2 complex Cl- 0
+
+desc complex
+
+saveOFF complex complex.lib
+
+saveAmberParm complex complex.prmtop complex.inpcrd
+
+quit

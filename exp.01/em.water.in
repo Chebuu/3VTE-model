@@ -1,0 +1,12 @@
+[0] Solvent minimization
+&cntrl
+    imin=1, 
+    maxcyc=500,
+    ntpr=10,
+    ntr=1,
+/
+Water molecules
+100.0
+RES 528 8769
+END
+END

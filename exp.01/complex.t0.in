@@ -1,0 +1,19 @@
+set default nocenter on
+set default PBradii mbondi
+set default CMAP on
+
+source leaprc.gaff2
+source leaprc.water.tip3p
+source leaprc.protein.ff14SB
+
+loadAmberParams FAD.frcmod
+loadAmberParams FAD.HID.frcmod
+loadAmberParams FAD.CYS.frcmod
+loadAmberParams CBGA.COO.frcmod
+
+loadOFF complex.lib
+
+source T484.RED.cmd
+
+saveAmberParm complex complex.t0.prmtop complex.t0.inpcrd
+quit

@@ -1,0 +1,18 @@
+[0] Equilibration
+ &cntrl
+  imin=0, ntb=0, igb = 1,
+  cut=9.0, ntc=1, ntf=1,
+  tempi=300.0, temp0=300.0,
+  ntt=3, gamma_ln=0.001,
+  nstlim=10, dt=0.002,
+  ntpr=1, ntwx=1, ifqnt=1
+ /
+ &qmmm
+  ! qmmask=':520,519,457 & !@8286-8297,8318-8326',
+  qmmask='(:520 & !:520@8286-8297,8318-8326) | :519@N8,C13,C22,N6 | :457@OH,HH',
+  qmcharge=-1,
+  qm_theory='PM3',
+  qmshake=1,
+  qm_ewald=1, qm_pme=1
+ /
+
