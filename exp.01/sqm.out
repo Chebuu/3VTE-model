@@ -1,0 +1,123 @@
+            --------------------------------------------------------
+                             AMBER SQM VERSION 17
+ 
+                                     By
+              Ross C. Walker, Michael F. Crowley, Scott Brozell,
+                         Tim Giese, Andreas W. Goetz,
+                        Tai-Sung Lee and David A. Case
+ 
+            --------------------------------------------------------
+ 
+
+--------------------------------------------------------------------------------
+  QM CALCULATION INFO
+--------------------------------------------------------------------------------
+
+| QMMM: Citation for AMBER QMMM Run:
+| QMMM: R.C. Walker, M.F. Crowley and D.A. Case, J. COMP. CHEM. 29:1019, 2008
+
+QMMM: SINGLET STATE CALCULATION
+QMMM: RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS =143
+
+| QMMM: *** Selected Hamiltonian *** 
+| QMMM: AM1         
+
+| QMMM: *** Parameter sets in use ***
+| QMMM: P : M.J.S.DEWAR et al. THEOCHEM, 187,1, (1989)
+| QMMM: O : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: C : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: N : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: H : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+
+| QMMM: *** SCF convergence criteria ***
+| QMMM: Energy change                :  0.1D-09 kcal/mol
+| QMMM: Error matrix |FP-PF|         :  0.1D+00 au
+| QMMM: Density matrix change        :  0.5D-06
+| QMMM: Maximum number of SCF cycles :     1000
+
+| QMMM: *** Diagonalization Routine Information ***
+| QMMM: Pseudo diagonalizations are allowed.
+| QMMM: Auto diagonalization routine selection is in use.
+| QMMM:
+| QMMM: Timing diagonalization routines:
+| QMMM:                              norbs =      243
+| QMMM:    diag iterations used for timing =        4
+| QMMM:
+| QMMM:              Internal diag routine = 0.130978 seconds
+| QMMM:                 Dspev diag routine = 0.164451 seconds
+| QMMM:                Dspevd diag routine = 0.122098 seconds
+| QMMM:                Dspevx diag routine = 0.537439 seconds
+| QMMM:                 Dsyev diag routine = 0.191544 seconds
+| QMMM:                Dsyevd diag routine = 0.160719 seconds
+| QMMM:                Dsyevr diag routine = 0.266711 seconds
+| QMMM:
+| QMMM:                Pseudo diag routine = 0.150150 seconds
+| QMMM: Pseudo diagonalization appears to be slower than regular
+| QMMM: diagonalization. Setting pseudo_diag=0 for optimum performance.
+| QMMM:
+| QMMM: Using dspevd routine (diag_routine=3).
+
+  QMMM: QM Region Cartesian Coordinates (*=link atom) 
+  QMMM: QM_NO.   MM_NO.  ATOM         X         Y         Z
+  QMMM:     1        1      P       61.8680   61.9730  -34.4530
+  QMMM:     2        2      O       60.3870   61.8930  -34.1880
+  QMMM:     3        3      O       62.0980   62.3670  -35.8850
+  QMMM:     4        4      O       62.3540   62.9330  -33.3060
+  QMMM:     5        5      C       63.3130   63.8570  -33.5120
+  QMMM:     6        6      C       62.9640   65.0050  -32.5960
+  QMMM:     7        7      O       63.9960   65.9330  -32.7670
+  QMMM:     8        8      C       61.8210   65.7930  -33.1490
+  QMMM:     9        9      O       61.5930   66.8210  -32.2260
+  QMMM:    10       10      C       62.4180   66.4150  -34.3960
+  QMMM:    11       11      O       61.7600   67.5760  -34.8090
+  QMMM:    12       12      C       63.8090   66.7400  -33.9350
+  QMMM:    13       13      N       64.7790   66.4090  -34.9920
+  QMMM:    14       14      C       65.0640   65.1950  -35.5890
+  QMMM:    15       15      N       66.0580   65.3550  -36.4980
+  QMMM:    16       16      C       66.4250   66.6620  -36.4760
+  QMMM:    17       17      C       67.3670   67.4130  -37.1820
+  QMMM:    18       18      N       68.1160   66.8670  -38.1390
+  QMMM:    19       19      N       67.4990   68.7680  -36.9200
+  QMMM:    20       20      C       66.7180   69.3840  -35.9630
+  QMMM:    21       21      N       65.7980   68.6600  -35.2650
+  QMMM:    22       22      C       65.6350   67.3300  -35.5260
+  QMMM:    23       23      N       66.4720   57.0040  -26.3930
+  QMMM:    24       24      C       67.5980   56.7550  -25.6060
+  QMMM:    25       25      O       68.2710   57.7260  -25.1770
+  QMMM:    26       26      N       67.9430   55.4140  -25.3060
+  QMMM:    27       27      C       67.1560   54.3890  -25.8090
+  QMMM:    28       28      O       67.4630   53.2320  -25.5460
+  QMMM:    29       29      C       66.0340   54.6530  -26.6030
+  QMMM:    30       30      N       65.2500   53.6190  -27.0950
+  QMMM:    31       31      C       64.1380   53.9020  -27.8830
+  QMMM:    32       32      C       63.3280   52.9020  -28.4280
+  QMMM:    33       33      C       62.2220   53.2560  -29.2330
+  QMMM:    34       34      C       61.3220   52.1940  -29.8200
+  QMMM:    35       35      C       61.9330   54.6050  -29.5170
+  QMMM:    36       36      C       60.7660   55.0490  -30.3920
+  QMMM:    37       37      C       62.7590   55.5790  -28.9720
+  QMMM:    38       38      C       63.8470   55.2320  -28.1730
+  QMMM:    39       39      N       64.6230   56.2520  -27.6890
+  QMMM:    40       40      C       65.7000   55.9760  -26.8900
+  QMMM:    41       41      C       64.1430   57.6320  -28.0030
+  QMMM:    42       42      C       64.9150   58.5540  -28.9020
+  QMMM:    43       43      O       66.1450   58.8260  -28.3140
+  QMMM:    44       44      C       64.1080   59.8250  -29.0310
+  QMMM:    45       45      O       62.8280   59.3950  -29.4170
+  QMMM:    46       46      C       64.6830   60.6540  -30.1580
+  QMMM:    47       47      O       64.4210   62.0410  -29.9380
+  QMMM:    48       48      C       64.0810   60.1270  -31.4590
+  QMMM:    49       49      O       64.8020   60.6020  -32.5520
+  QMMM:    50       50      P       64.1980   60.2880  -34.0000
+  QMMM:    51       51      O       64.8520   61.1800  -35.0570
+  QMMM:    52       52      O       64.3750   58.7980  -34.2730
+  QMMM:    53       53      O       62.5960   60.6090  -33.9710
+  QMMM:    54       54      H       63.3110   64.1780  -34.5330
+  QMMM:    55       55      H       64.2900   63.4690  -33.3110
+  QMMM:    56       56      H       62.7810   64.6210  -31.6140
+  QMMM:    57       57      H       60.9250   65.2380  -33.3350
+  QMMM:    58       58      H       62.4180   67.3080  -32.0750
+  QMMM:    59       59      H       62.3550   65.7660  -35.2450
+  QMMM:    60       60      H       61.7700   68.2270  -34.0900
+  QMMM:    61       61      H       63.9510   67.7780  -33.7190
+  QMMM:    62       62      H       64.5920   64.3020  -35.3750

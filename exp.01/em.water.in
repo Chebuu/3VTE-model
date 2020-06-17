@@ -1,7 +1,7 @@
 [0] Solvent minimization
 &cntrl
     imin=1, 
-    maxcyc=500,
+    maxcyc=100,
     ntpr=10,
     ntr=1,
 /
