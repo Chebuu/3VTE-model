@@ -16,17 +16,15 @@ FAD = loadMol2 ../structures/FAD.gaff.mol2
 
 complex = combine {3VTE FAD CBGA}
 
+loadAmberParams FAD.CYS.frcmod
 loadAmberParams FAD.HID.frcmod
 source FAD.HID.cmd
-loadAmberParams FAD.CYS.frcmod
 source FAD.CYS.cmd
 
 alignAxes complex
 
-solvateOct complex TIP3PBOX 4
-addIons2 complex Cl- 0
-
-desc complex
+solvateOct complex TIP3PBOX 3
+# addIons2 complex Cl- 0
 
 saveOFF complex complex.lib
 

@@ -4,7 +4,9 @@ SH - ca  250.000   1.760       from ligpargen lbcc for FLAV-His-Cys (s30 c29)
 
 ANGLE
 2C - SH - ca     62.000   104.200       from ligpargen lbcc for FLAV-His-Cys (c29 s30 c31)
-SH - ca - ca     51.650   110.580       from ligpargen lbcc for FLAV-His-Cys (s30 c31 c33)  
+SH - ca - ca     51.650   110.580       from ligpargen lbcc for FLAV-His-Cys (s30 c31 c33) 
+SH - ca - c3     103.30   110.580       from ligpargen lbcc for FLAV-His-Cys (s30 c31 c33) 
 
 DIHE
 2C-SH-ca-ca         0.324          180.0          2.0         from ligpargen lbcc for FLAV-His-Cys (h51 c31 s30 c29)
+2C-SH-ca-c3         0.324          180.0          2.0         TODO: dummy (fake) parameters 
