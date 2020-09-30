@@ -1,0 +1,42 @@
+Check global input consistency...
+Done.
+- Finished with read_parameters.
+  Reading topology file: /home/charmm-gui/local/GalaxyFill/data/topology_charmm22ph.in
+  Reading topology file: /home/charmm-gui/local/GalaxyFill/data/topology_charmm22ph_nt.in
+  Reading topology file: /home/charmm-gui/local/GalaxyFill/data/topology_charmm22ph_ct.in
+- Finished with read_topology_geo.
+  Reading topology file: /home/charmm-gui/local/GalaxyFill/data/topology_eng_charmm22ph.in
+  Num_ref_res =    77
+- Finished with read_topology_eng.
+- Rotamer setup
+  Reading rotamer library file  /home/charmm-gui/local/GalaxyFill/data/bbdep02.May.sortlib
+  Total number of rotamers in rot lib file      466829
+  Reading infile_chi_def file  /home/charmm-gui/local/GalaxyFill/data/def_chi.in
+  Random seed =   23711909
+Task: local_optimize
+ - local_optimize_relax: no
+ - local_optimize_sidechain: no
+============================================================
+  Reading sequence from pdb file: 3vte_proa.orig_init.pdb
+    There seems to be break in chain.   21 A ASN    22 A PRO  C-N bond length is    13.435
+  Reading pdb file: 3vte_proa.orig_init.pdb
+- Add missing atoms activated.
+  Number of added heavy atoms =     0
+  Total number of added atoms =     0
+  n_unplaced =     0
+- Fix type "all" activated: All atoms except ULR/USC are fixed.
+- Energy: MM energy activated.
+- Add missing atoms activated.
+  Number of added heavy atoms =     0
+  Total number of added atoms =     0
+  n_unplaced =     0
+Before optimization, 3vte_proa.orig_init.pdb ENERGY.0      52281.639
+Before optimization, 3vte_proa.orig_init.pdb ENERGY.1      52281.639        0.000        0.000
+Before optimization, 3vte_proa.orig_init.pdb ENERGY.2.0  38327.565    949.563   1029.325    652.682  11322.504      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000
+After  optimization, 3vte_proa.orig_init.pdb ENERGY.0        317.930
+After  optimization, 3vte_proa.orig_init.pdb ENERGY.1        317.930        0.000        0.000
+After  optimization, 3vte_proa.orig_init.pdb ENERGY.2.0     25.858    148.212     74.786     10.722     58.352      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000
+------------------------------------------------------------
+Total User Time =     23.503 sec
+           0 dy  0 hr  0 min 23.503 sec
+------------------------------------------------------------

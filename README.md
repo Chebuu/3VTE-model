@@ -39,7 +39,7 @@
 # TODO:
 
 ### Summary of Problems
-- The docked CBGA(-) pose chosen for [exp.00] doesn't move into the active site in sub-nanosecond MD runs because of an H-bond to the backbone, but the trajectory is dircted towards the active site with a lengthening H-bond, so longer run-time might eventually show CBGA(-) dock in the right pose. The protein was also restrained to reduce computational load, but removing the restaints on active-site residues will likely facilitate docking.
+The protein was also restrained to reduce computational load, but removing the restaints on active-site residues will likely facilitate docking, but the docked CBGA(-) pose chosen for doesn't move into the active site in sub-nanosecond MD runs.
 
 <p align='center'>
     <img alt='' src='img/exp.00.01.a.gif' width='350px'>
@@ -50,15 +50,15 @@
     </p>
 </p>
 
-- In [exp.01], a minimized CBGA(-) conformer was placed by hand in the active site and run through the same minimization steps in [exp.00]. More importantly, Tyr484 was replaced with a tyrosine phenolate (charge -1.0) in the QMMM runs only (the phenol was used in minimization runs). Obviously, a phenolate is *extremely* unstable, and I think it's causing the crazy trajectories seen in the QMMM runs. A Tyr484 phenolate is proposed to be the catalytic base, but I find it implausible that this species exists as a stable reactant. Or maybe I'm just naive, and this species is simply drawn for convenience, while the true species is implied. I think its much more likely that, instead of a phenolate, an interaction between Tyr484 and a nearby His or Trp nitrogen induces the Tyr484 phenol to act as a Lewis base. 
-    - Ultimately I just need to dig through the liteature to understand the mechanisms by which Tyr bases are formed and catalyze reactions.
-    - Update: I increased the run times and now sander actually segfaults during solvent minimization and [reports](exp.01/em.water.log) incalculable energy and Van der Waals forces.
+In [exp.01], a minimized CBGA(-) conformer was placed by hand in the active site and run through the same minimization steps in [exp.00]. More importantly, Tyr484 was replaced with a tyrosine phenolate (charge -1.0) in the QC runs only (the phenol was used in minimization runs). 
+
+A Tyr484 phenolate is proposed to be the catalytic base, but phenolate is very unstable, so I find it implausible that this species exists without interaction from neighboring side chains. 
 
 <p align='center'>
     <img alt='' src='img/exp.01.02.a.gif' width='350px'>
     <p align='center'>
         <div style='margin-left: auto; margin-right: auto; width: 525px'>
-            Short clip of MD run from [exp.01] (before the segfault bug) showing runaway trajectories (Tyr484 phenolate is top center). Unfortunately, I cleared the corresponding logs for this run, but I think the video clearly shows the phenolate is the underlying cause. 
+            Short clip of MD run from [exp.01] before a segfault broke it. 
         </div>
     </p>
 </p>
@@ -69,7 +69,7 @@
 - HOOH
 
 ### Write system temp/energy during equilibration
-- I'm unsure if the temp of the system in this sim
+- I'm unsure if the temp of the system in the amber sims
 
 ### Fix nonstandard residues
 - Curently all His residues are HIE (except FAD-bound His)

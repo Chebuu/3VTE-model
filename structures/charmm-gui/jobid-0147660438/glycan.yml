@@ -1,0 +1,73 @@
+- chain: B
+  glycan_list:
+    B: [601]
+  grs: |
+    1 BGLCNA
+  patches: {}
+  residue_list: [601]
+  residues:
+    1: {ires: 1, linkage: NGLB, linkage_patch: NGLB, linked_chain: A, linked_ires: null, linked_resid: '65', resid: 601, resname: BGLCNA}
+  root: 601
+  segid: CARA
+  type: n-linked
+- chain: C
+  glycan_list:
+    C: [602]
+  grs: |
+    1 BGLCNA
+  patches: {}
+  residue_list: [602]
+  residues:
+    1: {ires: 1, linkage: NGLB, linkage_patch: NGLB, linked_chain: A, linked_ires: null, linked_resid: '89', resid: 602, resname: BGLCNA}
+  root: 602
+  segid: CARB
+  type: n-linked
+- chain: D
+  glycan_list:
+    D: [603]
+  grs: |
+    1 BGLCNA
+  patches: {}
+  residue_list: [603]
+  residues:
+    1: {ires: 1, linkage: NGLB, linkage_patch: NGLB, linked_chain: A, linked_ires: null, linked_resid: '168', resid: 603, resname: BGLCNA}
+  root: 603
+  segid: CARC
+  type: n-linked
+- chain: E
+  glycan_list:
+    E: [604]
+  grs: |
+    1 BGLCNA
+  patches: {}
+  residue_list: [604]
+  residues:
+    1: {ires: 1, linkage: NGLB, linkage_patch: NGLB, linked_chain: A, linked_ires: null, linked_resid: '329', resid: 604, resname: BGLCNA}
+  root: 604
+  segid: CARD
+  type: n-linked
+- chain: F
+  glycan_list:
+    F: [605]
+  grs: |
+    1 BGLCNA
+  patches: {}
+  residue_list: [605]
+  residues:
+    1: {ires: 1, linkage: NGLB, linkage_patch: NGLB, linked_chain: A, linked_ires: null, linked_resid: '467', resid: 605, resname: BGLCNA}
+  root: 605
+  segid: CARE
+  type: n-linked
+- chain: G
+  glycan_list:
+    G: [606]
+  grs: |
+    1 BGLCNA
+  patches: {}
+  residue_list: [606]
+  residues:
+    1: {ires: 1, linkage: NGLB, linkage_patch: NGLB, linked_chain: A, linked_ires: null, linked_resid: '499', resid: 606, resname: BGLCNA}
+  root: 606
+  segid: CARF
+  type: n-linked
+

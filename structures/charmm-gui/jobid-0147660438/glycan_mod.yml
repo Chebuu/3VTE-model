@@ -1,0 +1,37 @@
+---
+- 
+  chain: B
+  type: n-linked
+  prot: '{"segid":"PROA","resname":"ASN","resid":"65"}'
+  grs: 1 BGLCNA
+  segid: CARA
+- 
+  chain: C
+  type: n-linked
+  prot: '{"segid":"PROA","resname":"ASN","resid":"89"}'
+  grs: 1 BGLCNA
+  segid: CARB
+- 
+  chain: D
+  type: n-linked
+  prot: '{"segid":"PROA","resname":"ASN","resid":"168"}'
+  grs: 1 BGLCNA
+  segid: CARC
+- 
+  chain: E
+  type: n-linked
+  prot: '{"segid":"PROA","resname":"ASN","resid":"329"}'
+  grs: 1 BGLCNA
+  segid: CARD
+- 
+  chain: F
+  type: n-linked
+  prot: '{"segid":"PROA","resname":"ASN","resid":"467"}'
+  grs: 1 BGLCNA
+  segid: CARE
+- 
+  chain: G
+  type: n-linked
+  prot: '{"segid":"PROA","resname":"ASN","resid":"499"}'
+  grs: 1 BGLCNA
+  segid: CARF

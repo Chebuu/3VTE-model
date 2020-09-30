@@ -1,0 +1,1 @@
+{"dimensions":["101","101","101","109.4712206344907","109.4712206344907","109.4712206344907"],"input":["amber","gromacs"],"forcefield":{"type":"c36m","files":["default","stream\/lipid\/toppar_all36_lipid_cationpi_wyf.str"],"custom":["fad\/fad.rtf","fad\/fad.prm"]},"systype":null,"hmr":1}
