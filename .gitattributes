@@ -24,7 +24,7 @@
 # *.in   binary 
 # *.fix  binary
 # *.zip  binary 
-charmm-gui/* binary
+structures/charmm-gui/* binary
 
 # Text File-Types
 *.md   text
