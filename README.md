@@ -36,10 +36,7 @@
     </p>
 </p>
 
-# TODO:
-
-### Summary of Problems
-The protein was also restrained to reduce computational load, but removing the restaints on active-site residues will likely facilitate docking, but the docked CBGA(-) pose chosen for doesn't move into the active site in sub-nanosecond MD runs.
+### TODO
 
 <p align='center'>
     <img alt='' src='img/exp.00.01.a.gif' width='350px'>
