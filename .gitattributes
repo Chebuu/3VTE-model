@@ -1,6 +1,5 @@
-
-# Auto Detect text-Files and perform LF Normalizations
-* text=auto
+structures/* linguist-vendored=true
+*.rtf linguist-vendored=true
 
 # Binary files: *.py[cod] is IGNORED in .gitignore
 *.db     binary
