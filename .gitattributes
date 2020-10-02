@@ -3,28 +3,27 @@
 * text=auto
 
 # Binary files: *.py[cod] is IGNORED in .gitignore
-# Make Necessary Changes, and add them as binary - if Required
-# *.db     binary
-# *.p      binary
-# *.pkl    binary
-# *.pickle binary
-# *.info binary 
-# *.pdb  binary 
-# *.rst7 binary 
-# *.mol2 binary 
-# *.sdf  binary
-# *.str  binary
-# *.fasta binary
-# *.map  binary
-# *.log  binary
-# *.crd  binary 
-# *.prm  binary
-# *.psf  binary 
-# *.out  binary 
-# *.in   binary 
-# *.fix  binary
-# *.zip  binary 
-structures/charmm-gui/* binary
+*.db     binary
+*.p      binary
+*.pkl    binary
+*.pickle binary
+*.info binary 
+*.pdb  binary 
+*.rst7 binary 
+*.mol2 binary 
+*.sdf  binary
+*.str  binary
+*.fasta binary
+*.map  binary
+*.log  binary
+*.crd  binary 
+*.prm  binary
+*.psf  binary 
+*.out  binary 
+*.in   binary 
+*.fix  binary
+*.rtf  binary
+*.zip  binary 
 
 # Text File-Types
 *.md   text
